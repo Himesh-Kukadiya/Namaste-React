@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
+
+    <!-- Place CDN link here to write react code without installing -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </head>
 
 <body>
@@ -13,15 +17,27 @@
     </div>
     <div id="root">
     </div>
+    <div id="react-root">
+    </div>
 </body>
+
+<!-- Add heading from JavaScript -->
 <script>
     const root = document.getElementById("root");
 
     const heading = document.createElement('h1');
-    heading.innerHTML = "Namaste From JavaScript";
+    heading.innerHTML = "Namaste From JavaScript!";
 
-    root.append(heading);
+    root.appendChild(heading);
 
+</script>
+
+<!-- Add heading from react using CDN -->
+<script>
+    const react_root = ReactDOM.createRoot(document.getElementById('react-root'))
+    const react_heading = React.createElement('h1', {}, 'Namaste From React JS');
+
+    react_root.render(react_heading);
 </script>
 
 </html>
