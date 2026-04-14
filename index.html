@@ -11,6 +11,17 @@
     <div>
         <h1> Hello From HTML </h1>
     </div>
+    <div id="root">
+    </div>
 </body>
+<script>
+    const root = document.getElementById("root");
+
+    const heading = document.createElement('h1');
+    heading.innerHTML = "Namaste From JavaScript";
+
+    root.append(heading);
+
+</script>
 
 </html>
