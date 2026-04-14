@@ -19,6 +19,10 @@
     </div>
     <div id="react-root">
     </div>
+    <div style="border: 2px solid black; padding: 0px 20px;">
+        <div id="main">
+        </div>
+    </div>
 </body>
 
 <!-- Add heading from JavaScript -->
@@ -38,6 +42,51 @@
     const react_heading = React.createElement('h1', {}, 'Namaste From React JS');
 
     react_root.render(react_heading);
+</script>
+
+<!-- Create different-different elements with React  -->
+<!-- Espacially create following structure using React  -->
+<!-- 
+    main
+        div
+            div#header
+                h1
+                    `Welcome to my page`
+                p
+                    `This is a simple paragraph.`
+
+            div#about
+                h2
+                    `About`
+                p
+                    `React js widely used for creating single page application.`
+            footer#footer
+                p
+                    `© 2026 My Website`
+-->
+<script>
+    const main = ReactDOM.createRoot(document.getElementById('main'));
+
+    const app = React.createElement('div', {}, [
+        // first div for my page
+        React.createElement('div', { id: "header" }, [
+            React.createElement('h1', {}, 'Welcome to my page'),
+            React.createElement('p', {}, 'This is a simple paragraph.')
+        ]),
+
+        // Second div for about
+        React.createElement('div', { id: "about" }, [
+            React.createElement('h2', {}, 'About'),
+            React.createElement('p', {}, 'React js widely used for creating single page application.')
+        ]),
+
+        // footer
+        React.createElement('footer', { id: "footer" },
+            React.createElement('p', {}, "© 2026 My Website")
+        )
+    ]);
+
+    main.render(app);
 </script>
 
 </html>
