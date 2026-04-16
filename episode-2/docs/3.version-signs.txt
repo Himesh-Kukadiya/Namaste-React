@@ -1,0 +1,9 @@
+xx.xx.xx 
+this is the formate of versioning. last xx is called minor version and first xx called major.
+
+
+^ - caret sign. 
+-> this sign is basically updated minor versions automatically if available. it is safe because there is no issue with simple minor updates.
+
+~ - tilde sign.
+-> this sign is basically updated major version automatically if available. it is unsafe to update major version automatically.

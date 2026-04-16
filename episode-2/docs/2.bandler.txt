@@ -1,0 +1,28 @@
+Before putting our code for the production we need to bundle our code togather. 
+We can have many html, css and js files into our project and it all should be bundled togather for production ready app.
+
+for doing all kind of above things we need to bundlers.
+job of bundlers is to bundle our code togather and make production ready app.
+
+we have web-pack, parcel and vite kind of packages that bundle our developed code.
+
+we are going to use parcel over here. and you will see the beauty of the bundlers.
+
+# Parcel # https://parceljs.org
+=> Build our project.
+=> Create a server for us.\
+=> HMR = Hot Module Replacement.
+=> Caching for us and make build faster allways.
+=> for doing HRM it use file watching algorithm - written in the C++
+=> Image optimization for us.
+=> for production build it minified our file also.
+=> Bundle all the files for us.
+=> Compress files for us.
+=> content Hashing 
+=> Code splitting.
+=> Differential bundling = support older versions of browser and older browsers as well.
+=> Diagnostic
+=> Good Error Showcase which make Error Handling easy.
+=> support HTTPs
+=> Tree shaking = remove unused code 
+

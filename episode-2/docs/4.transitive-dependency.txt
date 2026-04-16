@@ -1,0 +1,3 @@
+do we have only one package.json?
+-> no, when we install any package as like parcel. it has its owen dependency. those all dependencies has its owen. .... this is knowan as transitive dependencies.
+ 
