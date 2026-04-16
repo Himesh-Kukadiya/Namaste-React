@@ -1,0 +1,10 @@
+What is the production ready code?
+
+-> we do not want to use comments in our production ready code. our code needs to be clean.
+-> we do not want to keep console logs.
+-> our code must be compressed or short. do not keep extra code that we do not need.
+-> we need to compressed our images it we have.
+-> all things must be optimized.
+-> we need to minify our code. we need to bundle our code. suppose we have thousends of files we need to bundle it togather.
+
+-> in short you need to do bundling, code splitting, chunking, image optimization, remove the comments, minify the code, compress, etc...
